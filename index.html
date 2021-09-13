@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Padaria Artesanal</title>
+        
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ba799b3800.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="#nossa fornada">Nossa fornada</a>
+                    </li>
+
+                    <li>
+                        <a href="#paes">Pães</a>
+                    </li>
+
+                    <li>
+                        <a href="#peca seu pao">Peça seu pão</a>
+                    </li>
+
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="titulos-cabecalho">
+                <h1>Padaria Artesal</h1>
+                
+                <p>Pães com fermentação natural</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="content-section" id="nossa fornada">
+                <article>
+                    <h2>Nossa fornada</h2>
+                    <p>Aqui transformamos aromas, texturas e sabores em sensações, memórias e emoções 
+                        únicas a partir da maestria do nosso renomado chefe Gilson Santos, que sabe como poucos, 
+                        manipular a verdadeira farinha orgânica. Não aceitamos garantir apenas o bom e sim oferecer 
+                        o que há de melhor como pães de extrema qualidade e sabor sem igual. Do pãozinho quente 
+                        acompanhado daquele café tirado com muito carinho, o inconfundível aroma daquele expresso, 
+                        a média cremosa da maneira certa, aos mais caprichados confeitos, toasts e sucos funcionais, 
+                        aqui tudo é simples e bem executado para agradar aos mais exigentes e variados gostos. 
+                        Daí o nosso imenso prazer em acordar cedinho e esquentar o coração, sabendo que daqui a pouco 
+                        vamos aquecer o seu com uma fornada de motivos leves e deliciosos para transformar o seu dia.</p>
+
+                    <p>Todos nossos pães são feitos com longa fermentação. Isso traz muito mais do que um sabor incrível
+                         e uma casca deliciosa; mas também garante que a digestão seja mais leve e que o pão dure mais na 
+                         sua casa, mesmo sem nenhum tipo de conservante. Os pães fermentam por pelo menos 24 horas antes de 
+                         serem assados. Todos os pães são assados em forno de pedra, em pequenas quantidades - por isso nossas 
+                         fornadas não tem hora exata para sair. Aqui quem manda é o pão.</p>
+                </article>
+            </section> 
+
+
+            <section class="content-section" id="paes">
+                <div class="subtitulos">
+                    <h2>Pães</h2> 
+                </div>
+
+                <div class="card card-1">
+                    <img src="imagens/fotografia-fermentacao.jpg" alt="">
+                    <p>Fermentação Natural</p>
+                </div>
+
+                <div class="card card-2">
+                    <img src="imagens/fotografia-caseiros.jpg" alt="">
+                    <p>Caseiros</p>
+                </div>
+
+                <div class="card card-3">
+                    <img src="imagens/fotografia-integras.jpg" alt="">
+                    <p>Integrais</p>
+                </div>
+            </section>
+
+            
+
+            <section class="content-section" id="peca seu pao">
+                <h2>Peça seu pão!</h2>
+
+                <form class="formulario">
+                    <p>
+                        <label for="campo-nome">Nome completo</label><br>
+                        <input name="campo-nome" class="input-texto" id="campo-nome" type="text" placeholder="Digite seu nome completo">
+                    </p>
+
+                    <p>
+                        <label for="campo-cpf">CPF</label><br>
+                        <input name="campo-cpf" class="input-numerico" id="campo-cpf" type="text" placeholder="Ex.: 000.000.000-00" cpf-mask="000.000.000-00" maxlength="14">
+                    </p>
+
+                    <p>
+                        <label for="campo-endereco">Endereço</label><br>
+                        <input name="campo-endereco" class="input-texto" id="campo-endereco" type="text" placeholder="Digite seu endereço">
+                    </p>
+
+                    <p>
+                        <label for="campo-cep">CEP</label><br>
+                        <input name="campo-cep" class="input-numerico" id="campo-cep" type="text" placeholder="Ex.: 00000-000" cep-mask="00000-000" maxlength="9">
+                    </p>
+
+                    <p>
+                        <label for="campo-data">Data de entrega</label><br>
+                        <input id="campo-data" class="input-numerico" type="date">
+                    </p>
+
+                    <p>
+                        Período do dia para a entrega<br>
+                        <label><input name="opcao-entrega" type="radio" value="manha">Manhã</label>
+                        <label><input name="opcao-entrega" type="radio" value="tarde">Tarde</label>
+                        <label><input name="opcao-entrega" type="radio" value="ambos">Ambos</label>
+                    </p>
+
+                    <p>
+                        Escolha seu pão<br> 
+                        <select name="seleciona-pao">
+                            <option value="fermentacao-natural">Pão de fermentação natural</option>
+                            <option value="caseiro">Pão caseiro</option>
+                            <option value="integral">Pão integral</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="campo-numerico">Escolha a quantidade</label><br>
+                        <input id="campo-numerico" class="input-numerico" type="number"> 
+                    </p>
+
+                    <p>
+                        <label for="campo-mensagem">Observação</label><br>
+                        <textarea id="campo-mensagem" class="form-mensagem" name="campo-mensagem" rows="10" placeholder="Se quiser, digite aqui sua observação"></textarea>
+                    </p>
+
+                    <p>
+                        <button class="form-botao" id="botaoEnviar">Enviar</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer" id="contato">
+            <h2>Contato</h2>
+
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-whatsapp-square"></i>
+
+            <p>Padaria Artesanal<br>
+                Rua Rocha Cruz, 1.153  •  CEP 01510-011 • Água Fria, SP<br>
+                WhatsApp (11) 97342-8543 • E-mail: contato@padariaartesanal.com.br
+            </p>
+
+            <p class="copyright">Copyright 2021 • Desenvolvido por Jade Sales</p>
+        </footer>
+
+    </body>
+</html>

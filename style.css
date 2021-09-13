@@ -1,0 +1,194 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   font-family: arial, sans-serif;
+   background: white;
+   margin: 0; 
+   color: #2E2319;
+}
+
+.cabecalho{
+    background-image: url(imagens/fotografia-paes-cabecalho.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+
+.cabecalho nav ul{
+    text-align: right;
+    margin: 25px 25px 0 0;
+}
+
+.cabecalho nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+    margin: 3px;
+}
+
+.cabecalho nav a{
+    background: rgba(46, 35, 25, 0.5);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.cabecalho nav a:hover{
+    background:rgba(46, 35, 25, 0.8);
+}
+
+.titulos-cabecalho{
+    text-align: center;
+    color: white;   
+}
+
+.titulos-cabecalho h1{
+    text-transform: uppercase;
+    font-size: 120px;
+    text-shadow: 15px 15px 20px rgb(46, 35, 25);
+    font-family: Amatic-Bold, sans-serif;
+    margin: 100px 0 50px 0;
+}
+
+.titulos-cabecalho p{
+    background-color: rgba(46, 35, 25, 0.8);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 50px;
+    overflow: auto; /*para fixar a posição apesar do floar do filho*/
+}
+
+.content-section p{
+    line-height: 2;
+    margin: 0 30px 0 30px;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card{
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.card:hover{
+    border: 1px solid #2e231934;
+}
+
+.card-1, .card-2{
+    margin-right: 5px;
+}
+
+.card p{
+    background-color: #2E2319;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.content-section h2{
+    text-align: center;
+    font-family: Amatic-Bold, sans-serif;
+    font-size: 50px;
+    color: #2E2319;
+}
+
+@font-face{
+    font-family: Amatic-Bold;
+    src: url(fonte/Amatic-Bold.ttf);
+}
+
+.formulario{
+    border: 2px solid #e6e2df;
+    width: 35%;
+    text-align: left;
+    margin-left: 33%;
+    border-radius: 15px;
+    box-shadow: 0 0 1em #2E2319;
+    font-size: 15px;   
+    padding: 5px 0 40px 0;
+}
+
+.input-texto{
+    width: 100%;
+}
+
+.input-numerico, .input-texto, select{
+    height: 27px;
+} 
+
+.input-texto, .form-mensagem, .form-botao, input, select{
+    border-radius: 11px;
+    border: 2px solid #e6e2df;
+}
+
+.form-mensagem{
+    width: 100%;
+}
+
+.formulario p{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.form-botao{
+    width: 100px;
+    height: 40px;
+}
+
+button:hover{
+    background:rgba(46, 35, 25, 0.8);
+}
+
+footer{
+    text-align: center;
+    background-color: #2E2319;
+    margin-top: 50px;
+    padding: 0 20% 2% 20%;
+    line-height: 3;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+footer h2{
+    text-align: center;
+    font-family: Amatic-Bold, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+i{
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+.copyright{
+    margin-top: 15%;
+}
